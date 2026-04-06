@@ -66,7 +66,7 @@ export function CTASection() {
             </div>
 
             <h2
-              className="font-display-syne text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-none mb-5"
+              className="font-display-geist text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-none mb-5"
               style={{ color: "var(--text-primary)", letterSpacing: "-0.03em" }}
             >
               Ready to Elevate Your Research?
@@ -117,7 +117,7 @@ export function CTASection() {
             {stats.map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
                 <div
-                  className="font-display-syne text-2xl sm:text-3xl font-bold mb-1"
+                  className="font-display-geist text-2xl sm:text-3xl font-bold mb-1"
                   style={{ color: "var(--text-primary)", letterSpacing: "-0.03em" }}
                 >
                   {stat.value}

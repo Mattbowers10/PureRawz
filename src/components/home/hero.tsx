@@ -87,7 +87,7 @@ function SpecCard() {
           Research Grade
         </p>
         {/* Molecule name styled as formula */}
-        <div className="font-display-syne" style={{ color: "var(--text-primary)" }}>
+        <div className="font-display-geist" style={{ color: "var(--text-primary)" }}>
           <span style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1 }}>
             RAD‑140
           </span>
@@ -102,7 +102,7 @@ function SpecCard() {
               <span className="text-xs" style={{ color: "var(--text-dim)" }}>{s.label}</span>
               <div className="flex items-baseline gap-1">
                 <span
-                  className="font-display-syne"
+                  className="font-display-geist"
                   style={{ fontSize: "15px", fontWeight: 700, color: s.accent, letterSpacing: "-0.01em" }}
                 >
                   {s.value}
@@ -141,7 +141,7 @@ function SpecCard() {
       >
         <p className="text-xs" style={{ color: "var(--text-dim)" }}>Ships within</p>
         <p
-          className="font-display-syne mt-0.5"
+          className="font-display-geist mt-0.5"
           style={{ fontSize: "22px", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em" }}
         >
           24 hrs
@@ -215,7 +215,7 @@ export function Hero() {
 
             {/* Headline — Syne 88px, left-aligned */}
             <h1
-              className="animate-fade-in-up font-display-syne"
+              className="animate-fade-in-up font-display-geist"
               style={{
                 fontSize: "clamp(44px, 6.5vw, 88px)",
                 fontWeight: 800,

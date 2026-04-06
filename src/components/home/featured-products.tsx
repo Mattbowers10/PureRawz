@@ -23,7 +23,7 @@ export function FeaturedProducts() {
               Featured Products
             </p>
             <h2
-              className="font-display-syne text-3xl sm:text-4xl font-bold"
+              className="font-display-geist text-3xl sm:text-4xl font-bold"
               style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Popular Research Compounds

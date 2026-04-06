@@ -183,7 +183,7 @@ function WideCategoryCard({ cat }: { cat: typeof categories[0] }) {
           {cat.tagline}
         </div>
         <h3
-          className="font-display-syne text-3xl font-bold mb-3"
+          className="font-display-geist text-3xl font-bold mb-3"
           style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
         >
           {cat.name}
@@ -318,7 +318,7 @@ function NarrowCategoryCard({ cat }: { cat: typeof categories[0] }) {
         </div>
 
         <h3
-          className="font-display-syne text-xl font-bold mb-2"
+          className="font-display-geist text-xl font-bold mb-2"
           style={{ color: "var(--text-primary)", letterSpacing: "-0.02em" }}
         >
           {cat.name}
@@ -379,7 +379,7 @@ export function Categories() {
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <h2
-              className="font-display-syne text-3xl sm:text-4xl lg:text-5xl font-bold leading-none"
+              className="font-display-geist text-3xl sm:text-4xl lg:text-5xl font-bold leading-none"
               style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Research Compounds for{" "}

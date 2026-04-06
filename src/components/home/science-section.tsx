@@ -59,7 +59,7 @@ export function ScienceSection() {
               Our Process
             </p>
             <h2
-              className="font-display-syne text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-none mb-5"
+              className="font-display-geist text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-none mb-5"
               style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Science-Driven{" "}
@@ -128,7 +128,7 @@ export function ScienceSection() {
                       {step.number}
                     </span>
                     <h3
-                      className="font-display-syne text-sm font-bold"
+                      className="font-display-geist text-sm font-bold"
                       style={{ color: "var(--text-primary)", letterSpacing: "-0.01em" }}
                     >
                       {step.title}

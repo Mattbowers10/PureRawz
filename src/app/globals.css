@@ -721,13 +721,20 @@ body {
 }
 
 /* ============================================
-   DISPLAY FONT UTILITY
+   DISPLAY FONT UTILITIES
    Syne — geometric, scientific precision
+   Geist — clean, utilitarian, technical
    ============================================ */
 
 .font-display-syne {
   font-family: var(--font-syne, var(--font-display));
   font-feature-settings: "kern", "liga";
+  letter-spacing: -0.02em;
+}
+
+.font-display-geist {
+  font-family: var(--font-geist, var(--font-sans));
+  font-feature-settings: "kern", "liga", "ss01";
   letter-spacing: -0.02em;
 }
 
