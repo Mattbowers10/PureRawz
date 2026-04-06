@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "purerawz-nextjs",
+      "runtimeExecutable": "/tmp/purz-next.sh",
+      "runtimeArgs": [],
+      "port": 3000
+    },
+    {
+      "name": "brand-guide",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/tmp/purz-serve.py"],
+      "port": 8080
+    }
+  ]
+}
