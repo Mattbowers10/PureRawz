@@ -104,14 +104,19 @@ export function Header() {
     <>
       {/* Compliance announcement bar */}
       <div className="compliance-banner fixed top-0 left-0 right-0 z-[60]">
-        For research use only — not for human consumption &bull; All products independently COA verified
+        <span className="hidden sm:inline">
+          For research use only — not for human consumption &bull; All products independently COA verified
+        </span>
+        <span className="sm:hidden">
+          For research use only — not for human consumption
+        </span>
       </div>
 
       <header
         role="banner"
         className={cn(
           "fixed left-0 right-0 z-50 transition-all duration-300",
-          "top-[30px]", // sits below the 30px compliance bar
+          "top-[var(--compliance-bar-height)]",
           scrolled
             ? [
                 "py-0",

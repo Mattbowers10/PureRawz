@@ -59,11 +59,11 @@ export function ScienceSection() {
               Our Process
             </p>
             <h2
-              className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold tracking-tight leading-none mb-5"
-              style={{ color: "var(--text-primary)" }}
+              className="font-display-syne text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-none mb-5"
+              style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Science-Driven{" "}
-              <span className="gradient-text">Quality Assurance</span>
+              <span className="gradient-text-glow">Quality Assurance</span>
             </h2>
             <p
               className="text-base leading-relaxed mb-8 max-w-md"
@@ -128,8 +128,8 @@ export function ScienceSection() {
                       {step.number}
                     </span>
                     <h3
-                      className="text-sm font-bold"
-                      style={{ color: "var(--text-primary)" }}
+                      className="font-display-syne text-sm font-bold"
+                      style={{ color: "var(--text-primary)", letterSpacing: "-0.01em" }}
                     >
                       {step.title}
                     </h3>

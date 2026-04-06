@@ -3,15 +3,10 @@
   "configurations": [
     {
       "name": "purerawz-nextjs",
-      "runtimeExecutable": "/tmp/purz-next.sh",
-      "runtimeArgs": [],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/matthewbowers/Library/CloudStorage/GoogleDrive-matt@spogossindustries.com/Shared drives/Markhor/Pure Rawz/5. Web Development/PureRawz Claude Test",
       "port": 3000
-    },
-    {
-      "name": "brand-guide",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["/tmp/purz-serve.py"],
-      "port": 8080
     }
   ]
 }

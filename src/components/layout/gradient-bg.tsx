@@ -10,13 +10,15 @@ export function GradientBackground() {
       <div className="absolute inset-0" style={{ background: "var(--gradient-mesh)" }} />
 
       {/* Animated orbs */}
+      {/* Primary crimson — top left */}
       <div
-        className="absolute -top-[300px] -left-[200px] w-[600px] h-[600px] rounded-full opacity-30"
+        className="absolute -top-[300px] -left-[200px] w-[700px] h-[700px] rounded-full opacity-30"
         style={{
-          background: "radial-gradient(circle, rgba(160, 3, 3, 0.15) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(160, 3, 3, 0.18) 0%, transparent 70%)",
           animation: "orb-float-1 20s ease-in-out infinite",
         }}
       />
+      {/* Secondary crimson — right mid */}
       <div
         className="absolute top-[40%] -right-[150px] w-[500px] h-[500px] rounded-full opacity-20"
         style={{
@@ -24,10 +26,19 @@ export function GradientBackground() {
           animation: "orb-float-2 25s ease-in-out infinite",
         }}
       />
+      {/* Cool blue-teal counterpoint — lower center */}
       <div
-        className="absolute -bottom-[200px] left-[30%] w-[400px] h-[400px] rounded-full opacity-15"
+        className="absolute top-[55%] left-[45%] w-[500px] h-[400px] rounded-full opacity-12"
         style={{
-          background: "radial-gradient(circle, rgba(88, 28, 135, 0.1) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse, rgba(55, 130, 230, 0.07) 0%, transparent 70%)",
+          animation: "orb-float-2 35s ease-in-out infinite reverse",
+        }}
+      />
+      {/* Deep indigo — bottom left */}
+      <div
+        className="absolute -bottom-[200px] left-[20%] w-[500px] h-[500px] rounded-full opacity-15"
+        style={{
+          background: "radial-gradient(circle, rgba(88, 28, 135, 0.09) 0%, transparent 70%)",
           animation: "orb-float-1 30s ease-in-out infinite reverse",
         }}
       />

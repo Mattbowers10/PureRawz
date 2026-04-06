@@ -70,11 +70,11 @@ export function Testimonials() {
             Testimonials
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold tracking-tight"
-            style={{ color: "var(--text-primary)" }}
+            className="font-display-syne text-3xl sm:text-4xl font-bold"
+            style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
           >
             Trusted by Researchers{" "}
-            <span className="gradient-text">Worldwide</span>
+            <span className="gradient-text-glow">Worldwide</span>
           </h2>
           <p
             className="mt-4 text-base max-w-xl mx-auto"

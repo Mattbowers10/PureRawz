@@ -23,8 +23,8 @@ export function FeaturedProducts() {
               Featured Products
             </p>
             <h2
-              className="text-3xl sm:text-4xl font-bold tracking-tight"
-              style={{ color: "var(--text-primary)" }}
+              className="font-display-syne text-3xl sm:text-4xl font-bold"
+              style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Popular Research Compounds
             </h2>

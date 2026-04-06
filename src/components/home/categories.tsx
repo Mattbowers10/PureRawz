@@ -183,8 +183,8 @@ function WideCategoryCard({ cat }: { cat: typeof categories[0] }) {
           {cat.tagline}
         </div>
         <h3
-          className="text-3xl font-bold tracking-tight mb-3"
-          style={{ color: "var(--text-primary)" }}
+          className="font-display-syne text-3xl font-bold mb-3"
+          style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
         >
           {cat.name}
         </h3>
@@ -318,8 +318,8 @@ function NarrowCategoryCard({ cat }: { cat: typeof categories[0] }) {
         </div>
 
         <h3
-          className="text-xl font-bold mb-2 tracking-tight"
-          style={{ color: "var(--text-primary)" }}
+          className="font-display-syne text-xl font-bold mb-2"
+          style={{ color: "var(--text-primary)", letterSpacing: "-0.02em" }}
         >
           {cat.name}
         </h3>
@@ -379,11 +379,11 @@ export function Categories() {
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-none"
-              style={{ color: "var(--text-primary)" }}
+              className="font-display-syne text-3xl sm:text-4xl lg:text-5xl font-bold leading-none"
+              style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
               Research Compounds for{" "}
-              <span className="gradient-text">Every Protocol</span>
+              <span className="gradient-text-glow">Every Protocol</span>
             </h2>
             <Link
               href="/products"
