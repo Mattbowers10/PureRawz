@@ -30,7 +30,7 @@ function Sparks() {
   }, []);
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true" style={{ zIndex: 2 }}>
       {sparks.map((s) => (
         <div
           key={s.id}
@@ -158,36 +158,47 @@ export function Hero() {
       className="relative min-h-[92vh] flex items-center overflow-hidden"
       style={{ paddingTop: "86px" }}
     >
-      {/* Deep crimson radial bloom — off-center left */}
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        style={{ zIndex: 0 }}
+      >
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark scrim — keeps text legible over video */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          zIndex: 1,
+          background: "linear-gradient(to right, rgba(6,4,4,0.82) 0%, rgba(6,4,4,0.65) 55%, rgba(6,4,4,0.45) 100%)",
+        }}
+      />
+
+      {/* Crimson bloom — sits above video */}
       <div
         className="absolute pointer-events-none"
         aria-hidden="true"
         style={{
+          zIndex: 2,
           top: "10%",
           left: "20%",
           width: "800px",
           height: "600px",
-          background: "radial-gradient(ellipse, rgba(160,3,3,0.16) 0%, rgba(160,3,3,0.04) 45%, transparent 70%)",
-        }}
-      />
-
-      {/* Subtle right-side blue accent */}
-      <div
-        className="absolute pointer-events-none"
-        aria-hidden="true"
-        style={{
-          top: "40%",
-          right: "-5%",
-          width: "500px",
-          height: "400px",
-          background: "radial-gradient(ellipse, rgba(85,179,255,0.04) 0%, transparent 65%)",
+          background: "radial-gradient(ellipse, rgba(160,3,3,0.18) 0%, rgba(160,3,3,0.04) 45%, transparent 70%)",
         }}
       />
 
       {/* Spark particles */}
       <Sparks />
 
-      <div className="container relative py-24 lg:py-32">
+      <div className="container relative py-24 lg:py-32" style={{ zIndex: 3 }}>
         <div className="grid lg:grid-cols-[1fr_360px] gap-16 items-center">
 
           {/* ── Left: Copy ── */}
@@ -320,10 +331,10 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom fade */}
+      {/* Bottom fade — blends video into page bg */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-28 pointer-events-none"
-        style={{ background: "linear-gradient(to top, var(--bg), transparent)" }}
+        className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"
+        style={{ zIndex: 4, background: "linear-gradient(to top, var(--bg) 0%, transparent 100%)" }}
       />
     </section>
   );
