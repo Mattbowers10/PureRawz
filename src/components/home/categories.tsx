@@ -6,12 +6,29 @@ import { useState } from "react";
 
 const categories = [
   {
+    name: "Peptides",
+    tagline: "Our Flagship Category",
+    description:
+      "The most extensive research peptide catalog in the industry. Bio-identical sequences for tissue repair, hormonal modulation, recovery, and longevity pathways — every batch independently verified.",
+    icon: Syringe,
+    href: "/peptides",
+    productCount: 18,
+    purity: "98.8%",
+    color: "#55b3ff",
+    colorMid: "rgba(85,179,255,0.18)",
+    colorDim: "rgba(85,179,255,0.07)",
+    colorGlow: "rgba(85,179,255,0.30)",
+    colorBorder: "rgba(85,179,255,0.28)",
+    bloomColor: "rgba(85,179,255,0.14)",
+    wide: true,
+  },
+  {
     name: "SARMs",
     tagline: "Selective Androgen Receptor Modulators",
     description:
       "Precision-engineered compounds with exceptional receptor selectivity. The most clinically studied class in our catalog.",
     icon: FlaskConical,
-    href: "/products?category=sarms",
+    href: "/sarms",
     productCount: 12,
     purity: "99.2%",
     color: "#A00303",
@@ -20,23 +37,6 @@ const categories = [
     colorGlow: "rgba(160,3,3,0.35)",
     colorBorder: "rgba(160,3,3,0.3)",
     bloomColor: "rgba(160,3,3,0.15)",
-    wide: true,
-  },
-  {
-    name: "Peptides",
-    tagline: "Bio-Identical Peptide Chains",
-    description:
-      "Research-grade sequences for tissue repair, hormonal pathway, and recovery mechanism studies.",
-    icon: Syringe,
-    href: "/products?category=peptides",
-    productCount: 18,
-    purity: "98.8%",
-    color: "#55b3ff",
-    colorMid: "rgba(85,179,255,0.18)",
-    colorDim: "rgba(85,179,255,0.07)",
-    colorGlow: "rgba(85,179,255,0.30)",
-    colorBorder: "rgba(85,179,255,0.28)",
-    bloomColor: "rgba(85,179,255,0.12)",
     wide: false,
   },
   {
@@ -45,7 +45,7 @@ const categories = [
     description:
       "From proven racetams to cutting-edge peptide nootropics — neurological mechanism research at its finest.",
     icon: Brain,
-    href: "/products?category=nootropics",
+    href: "/nootropics",
     productCount: 9,
     purity: "99.1%",
     color: "#a78bfa",
@@ -379,11 +379,11 @@ export function Categories() {
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <h2
-              className="font-display-geist text-3xl sm:text-4xl lg:text-5xl font-bold leading-none"
+              className="font-display-syne text-3xl sm:text-4xl lg:text-5xl font-bold leading-none"
               style={{ color: "var(--text-primary)", letterSpacing: "-0.025em" }}
             >
-              Research Compounds for{" "}
-              <span className="gradient-text-glow">Every Protocol</span>
+              Leading with{" "}
+              <span style={{ color: "#55b3ff", filter: "drop-shadow(0 0 20px rgba(85,179,255,0.4))" }}>Peptides</span>
             </h2>
             <Link
               href="/products"
